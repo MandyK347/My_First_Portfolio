@@ -1,73 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Basic HTML Page</title>
-    </head>
-    <body>
-        <header>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tweets.html">Tweets</a></li>
-            </ul>
-        </header>
-        <main>
-            <article>
-        <h1>Welcome to My Basic HTML Page</h1>
-        <p>My first HTML document.</p>
-        <h2>Enhance My Basic HTML Page</h2>
-        <p>Making changes in the document.</p>
-        <h3>About This Page</h3>
-        <p>This page will provide information about basic HTML</p>
-        <p>Learning about basic HTML is interesting</p>
-        <a href="https://www.google.com">
-            <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="Clickable Image">
-        </a>
-        <p>Check out my tweets: <a href="tweets.html">View Tweets</a></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCon 2024</title>
+    <link href="base.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
 
-        <!-- Table of learnwers -->
-         <div class="learners-table">
-            <h2>Learners information</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Country</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>25</td>
-                        <td>USA</td>
-                    </tr>
-                    <tr>
-                        <td>Emily</td>
-                        <td>28</td>
-                        <td>Canada</td>
-                    </tr>
-                    <tr>
-                        <td>Michel</td>
-                        <td>32</td>
-                        <td>Australia</td>
-                    </tr>
-                    <tr>
-                        <td>Sophia</td>
-                        <td>21</td>
-                        <td>UK</td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
-            </article>
-            <aside>
-                <p>placeholder to add comment thread later</p>
-            </aside>
-        </main>
-        <footer>
-            <p>Made by Mandy Khumalo - <a href="https://x.com/Mandy78773746" targe="_blank">here</a>.</p>
-        </footer>
-    </body>
+<header>
+    <h1>TechCon 2024</h1>
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Welcome to TechCon 2024</h2>
+        <p>Join us for the premier technology conference of the year, where innovators and tech enthusiasts come together and discusss the new technology.</p>
+        
+        <h3>Watch our Promotional Video</h3>
+        <video controls width="600" aria-labelledby="video-description">
+            <source src="promo-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            <track kind="subtitles" src="subtitles.vtt" srclang="en" label="English">
+        </video>
+        <p id="video-description">This video highlights the exciting features and opportunities at TechCon 2024.</p>
+    </section>
+    <article>
+        <h2>History</h2>
+        <p>TechCon was established in 2010 as a platform to bring together technology enthusiasts, industry leaders, and innovators. Over the years, it has grown from a small gathering of tech professionals to a premier conference attracting thousands of attendees globally.</p>
+        <img src="images/history.jpg" alt="Early TechCon Conference" />
+        <p>With each passing year, TechCon has expanded its reach and influence, showcasing the latest trends and advancements in the technology sector.</p>
+    </article>
+
+    <article>
+        <h2>Mission</h2>
+        <p>Our mission at TechCon 2024 is to inspire innovation and collaboration among tech professionals. We aim to create an inclusive environment that fosters learning and networking opportunities for everyone involved in the tech community.</p>
+        <img src="images/mission.jpg" alt="Team brainstorming at TechCon" />
+    </article>
+
+    <article>
+        <h2>Past Speakers</h2>
+        <p>TechCon has hosted an impressive lineup of speakers over the years, including some of the most influential figures in the technology industry.</p>
+
+        <section>
+            <h3>Jane Doe</h3>
+            <img src="images/jane-doe.jpg" alt="Jane Doe, Tech Innovator" />
+            <p>Jane Doe is known for her groundbreaking work in artificial intelligence and has been a driving force in tech innovation.</p>
+        </section>
+
+        <section>
+            <h3>John Smith</h3>
+            <img src="images/john-smith.jpg" alt="John Smith, Software Engineer" />
+            <p>John Smith has made significant contributions to software development and is an advocate for open-source technologies.</p>
+        </section>
+
+        <section>
+            <h3>Emily Johnson</h3>
+            <img src="images/emily-johnson.jpg" alt="Emily Johnson, Cybersecurity Expert" />
+            <p>Emily Johnson is a leading expert in cybersecurity and has shared her insights at various global conferences.</p>
+        </section>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2024 TechCon. All rights reserved.</p>
+</footer>
+
+</body>
 </html>
